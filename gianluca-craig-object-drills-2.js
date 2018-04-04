@@ -11,4 +11,29 @@ const testData = [
   { name: 'John Dough', grade: 'B' },
   { name: 'Jill Do', grade: 'A' },
 ];
-console.log(makeStudentsReport(testData));
+//console.log(makeStudentsReport(testData));
+
+const studentData = [
+  {
+    name: 'Tim',
+    status: 'Current student',
+    course: 'Biology',
+  },
+  {
+    name: 'Sue',
+    status: 'Withdrawn',
+    course: 'Mathematics',
+  },
+  {
+    name: 'Liz',
+    status: 'On leave',
+    course: 'Computer science',
+  },
+];
+
+function enrollInSummerSchool(students) {
+  return students.map(e => {
+    e.status = 'In Summer School';
+    return e;
+  });
+}
